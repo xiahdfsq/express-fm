@@ -32,4 +32,8 @@ show dbs
 use mydb // 切换数据库
 退出：exit 或者 quit
 
+git config --global http.proxy http://127.0.0.1:7897
+git config --global https.proxy http://127.0.0.1:7897
+export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
+
 /Users/hulijun/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Common/Settings/0/0/MongoDB/mongo
