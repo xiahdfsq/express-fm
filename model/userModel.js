@@ -18,10 +18,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
-        type: String,
-        default: null
-    },
     createAt: {
         type: Date,
         default: Date.now()
@@ -29,7 +25,15 @@ const userSchema = new mongoose.Schema({
     updateAt: {
         type: Date,
         default: Date.now()
-    }
+    },
+    image: {
+        type: String,
+        default: null
+    },
+    email: {
+        type: String,
+        default: null
+    },
 });
 
 module.exports = userSchema;

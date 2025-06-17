@@ -6,9 +6,9 @@ async function main() {
 }
 
 main().then(res => {
-    console.log("db con success>>>", res);
+    console.log("db connection success>>>", res);
 }).catch(err => {
-    console.log("db con error>>>", err);
+    console.log("db connection error>>>", err);
 });
 
 module.exports = {
