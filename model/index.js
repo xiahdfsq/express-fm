@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const { mongopath } = require("../config/default")
 
 async function main() {
-    await mongoose.connect('mongodb://localhost:27017/express-video');
+    await mongoose.connect(mongopath);
     console.log('数据库连接成功');
 }
 
